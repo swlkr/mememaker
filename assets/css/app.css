@@ -1,0 +1,71 @@
+html, body {
+  font-family: var(--font-sans);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-size: var(--scale-1);
+}
+
+form > * {
+  margin-bottom: var(--size-4);
+  font-size: var(--scale-1);
+}
+
+textarea {
+  padding: var(--size-2);
+  border-radius: var(--radius-md);
+  font-size: var(--scale-4);
+}
+
+main {
+  background-color: var(--color-grey-300);
+  height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.up, .down {
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-size: var(--scale-3);
+  text-shadow: 1px 1px 2px black;
+}
+
+.up {
+}
+
+.down {
+  bottom: 5px;
+}
+
+.meme {
+  position: relative;
+  width: 100%;
+}
+
+.meme img {
+  width: 100%;
+  position: absolute;
+  max-width: var(--width-lg);
+}
+
+.draggable {
+  width: 100px;
+  height: 100px;
+  border: none;
+  text-shadow: 1px 1px 2px black;
+}
+
+.meme:hover .draggable {
+  border: dashed 4px var(--color-grey-500);
+  resize: both;
+}

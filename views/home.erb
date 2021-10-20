@@ -1,0 +1,11 @@
+<h1>meme maker</h1>
+
+<ul>
+  <% @memes.each do |meme| %>
+    <li>
+      <a href="<%= meme_path(meme) %>">
+        <img src="<%= meme.url %>" />
+      </a>
+    </li>
+  <% end %>
+</ul>
